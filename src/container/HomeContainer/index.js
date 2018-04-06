@@ -9,7 +9,7 @@ import {
 export interface Props {
 	navigation: any,
 	fetchList: Function,
-	data: Array,
+	data: Object,
 }
 export interface State {}
 class HomeContainer extends React.Component<Props, State> {

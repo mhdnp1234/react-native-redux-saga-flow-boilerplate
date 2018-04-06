@@ -6,4 +6,5 @@ export const rootSaga =  function* rootSagas() {
     yield all([
     ...HomeContainerSaga,
     ]);
-}
+};
+

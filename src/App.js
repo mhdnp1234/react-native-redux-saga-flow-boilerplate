@@ -19,7 +19,7 @@ const Drawer = DrawerNavigator(
 
 const App = StackNavigator(
 	{
-		Login: { 
+		Login: {
 			screen: Login,
 		},
 		BlankPage: {

@@ -24,7 +24,7 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "yarn jest --maxWorkers=4 --silent",
+    "test": "yarn jest --maxWorkers=4 --silent && flow && eslint .",
     "jest": "node node_modules/jest/bin/jest.js",
     "precommit": "yarn test"
   },

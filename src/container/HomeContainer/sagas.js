@@ -1,5 +1,4 @@
 import {put, call, takeLatest} from 'redux-saga/effects';
-import {delay} from 'redux-saga';
 import {
 	FETCH_LIST,
 } from './constants';

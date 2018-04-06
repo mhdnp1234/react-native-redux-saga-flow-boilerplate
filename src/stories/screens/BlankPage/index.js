@@ -1,7 +1,7 @@
-import * as React from "react";
-import { Container, Header, Title, Content, Text, Button, Icon, Left, Right, Body } from "native-base";
+import * as React from 'react';
+import { Container, Header, Title, Content, Text, Button, Icon, Left, Right, Body } from 'native-base';
 
-import styles from "./styles";
+import styles from './styles';
 export interface Props {
 	navigation: any;
 }
@@ -19,14 +19,14 @@ class BlankPage extends React.Component<Props, State> {
 					</Left>
 
 					<Body style={{ flex: 3 }}>
-						<Title>{param ? param.item.login : "Blank Page"}</Title>
+						<Title>{param ? param.item.login : 'Blank Page'}</Title>
 					</Body>
 
 					<Right />
 				</Header>
 
 				<Content padder>
-					<Text>{param !== undefined ? param.item.login : "Create Something Awesome . . ."}</Text>
+					<Text>{param !== undefined ? param.item.login : 'Create Something Awesome . . .'}</Text>
 				</Content>
 			</Container>
 		);

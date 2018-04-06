@@ -1,15 +1,15 @@
-import { Dimensions, StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from 'react-native';
 
-const deviceHeight = Dimensions.get("window").height;
+const deviceHeight = Dimensions.get('window').height;
 
 const styles: any = StyleSheet.create({
 	container: {
-		position: "absolute",
+		position: 'absolute',
 		top: 0,
 		bottom: 0,
 		left: 0,
 		right: 0,
-		backgroundColor: "#FBFAFA",
+		backgroundColor: '#FBFAFA',
 	},
 	shadow: {
 		flex: 1,
@@ -30,7 +30,7 @@ const styles: any = StyleSheet.create({
 	},
 	btn: {
 		marginTop: 20,
-		alignSelf: "center",
+		alignSelf: 'center',
 	},
 });
 export default styles;
