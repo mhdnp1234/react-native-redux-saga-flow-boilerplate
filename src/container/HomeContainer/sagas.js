@@ -8,15 +8,14 @@ import {
     fetchListSuccess,
     listIsLoading,
 } from './actions';
-import datas from './data';
 import axios from 'axios';
 
 const gitHubApi = axios.create({
     baseURL: 'https://api.github.com',
 });
 
-export function fetchUser(username) {
-    return gitHubApi.get(`/users/${username}`)
+export function fetchUser() {
+    return gitHubApi.get('/users')
         .then(function(response) {
             return response.data;
         })
@@ -26,10 +25,9 @@ export function fetchUser(username) {
 }
 
 export function* fetchListFlow(action) {
-    const result = yield call(fetchUser, 'mhdnp1234');
-    console.log(result);
+    const result = yield call(fetchUser);
     if (result) {
-        yield put(fetchListSuccess([result]));
+        yield put(fetchListSuccess(result));
     }
     yield put(listIsLoading(false));
 }

@@ -1,5 +1,5 @@
 {
-  "name": "ReactNativeSeed",
+  "name": "reactnativemhdnp1234",
   "version": "1.1.0",
   "private": true,
   "devDependencies": {
@@ -24,14 +24,18 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "yarn jest && flow && eslint .",
+    "test": "yarn jest --maxWorkers=4 --silent",
     "jest": "node node_modules/jest/bin/jest.js",
     "precommit": "yarn test"
   },
   "jest": {
-    "preset": "jest-expo",
+    "preset": "react-native",
+    "collectCoverageFrom": [
+      "src/**/*.{js}"
+    ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|lottie-react-native|expo|react-native-maps|react-native-svg|react-native-branch|native-base-shoutem-theme|react-native-easy-grid|react-native-drawer|react-native-vector-icons|react-native-keyboard-aware-scroll-view|react-navigation|native-base|@expo|react-native-scrollable-tab-view)/)"
+      
+      "node_modules/(?!react-native|native-base-shoutem-theme|@shoutem/animation|@shoutem/ui|tcomb-form-native|react-navigation)"
     ]
   },
   "dependencies": {

@@ -2,3 +2,5 @@ node_modules/
 .expo/
 npm-debug.*
 .DS_Store
+**/__snapshots__/*
+yarn-error.log

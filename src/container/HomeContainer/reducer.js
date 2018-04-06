@@ -1,5 +1,4 @@
 import {
-	FETCH_LIST,
 	FETCH_LIST_SUCCESS,
 	LIST_IS_LOADING,
 } from './constants';

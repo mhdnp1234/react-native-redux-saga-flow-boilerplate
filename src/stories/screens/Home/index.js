@@ -22,6 +22,7 @@ export interface Props {
 export interface State {}
 class Home extends React.Component<Props, State> {
   render() {
+    console.log(this.props.list);
     return (
       <Container style={styles.container}>
         <Header>
