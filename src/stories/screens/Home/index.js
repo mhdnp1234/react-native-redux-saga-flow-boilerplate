@@ -13,7 +13,7 @@ import {
   List,
   ListItem
 } from 'native-base';
-
+import UserItem from '../../../components/UserItem';
 import styles from './styles';
 export interface Props {
   navigation: any;
@@ -50,7 +50,7 @@ class Home extends React.Component<Props, State> {
                     item
                   })}
               >
-                <Text>{item.login}</Text>
+                <UserItem user={item} />
               </ListItem>
             ))}
           </List>
